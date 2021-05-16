@@ -32,6 +32,6 @@ return [
     'google' => [
         'client_id' => '152308788049-53pbvsvq2ch7ncnjb808lfcmep9d5lrc.apps.googleusercontent.com',
         'client_secret' => '2ZEZZUIG7Gf9srRHArG_gf21',
-        'redirect' => 'http://127.0.0.1:8000/auth/google/callback',
+        'redirect' => 'https://associacaohaitiana.herokuapp.com/auth/google/callback',
     ],
 ];
