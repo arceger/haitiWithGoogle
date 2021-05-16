@@ -78,7 +78,7 @@
                                    <div class="col-md-6 offset-md-4">
                                        <div class="form-check">
                                         <a href="{{ url('auth/google') }}" style="margin-top: 20px;" class="btn btn-sm btn-block">
-                                        <img src="btn_google_signin_dark_focus_web@2x.png" style="width: 189%;text-align: center;padding-right: 40px;">
+                                        <img src="btn_google_signin_dark_focus_web@2x.png" style="width: 100%;text-align: center;padding-right: 40px;">
                                         </a>
                                        </div>
                                    </div>
