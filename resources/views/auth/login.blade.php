@@ -5,12 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Validar Acesso</div>
+                <div class="card-header">Entre com Seus Dados</div>
 
                 <div class="card-body">
-                                     <label class="form-check-label" for="remember">
-                                        {{ __('Entre com os Seus Dados') }}
-                                     </label>
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -71,9 +68,7 @@
                                 <div class="form-group row">
                                    <div class="col-md-6 offset-md-4">
                                        <div class="form-check">
-                                        <label class="form-check-label" for="remember">
-                                        {{ __('Ou Use Sua Conta do Google') }}
-                                        </label>
+                                       <div class="card-header">Ou Entre com sua Conta do Google</div>
                                        <a href="{{ url('auth/google') }}" style="margin-top: 20px;" class="btn btn-sm btn-block">
                                        <img src="btn_google_signin_dark_focus_web@2x.png" style="width: 189%;text-align: center;padding-right: 40px;">
                                        </a>
