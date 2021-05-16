@@ -81,7 +81,8 @@
                 </div>
 
                 <div class="card-header">Ou Entre com sua Conta do Google</div>
-
+                <div class="card-body">
+                </div>
 
             </div>
         </div>
