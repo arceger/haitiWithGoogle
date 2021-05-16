@@ -8,14 +8,16 @@
                 <div class="card-header">Validar Acesso</div>
 
                 <div class="card-body">
+                                     <label class="form-check-label" for="remember">
+                                        {{ __('Entre com os Seus Dados') }}
+                                     </label>
+
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
 
-                                     <label class="form-check-label" for="remember">
-                                        {{ __('Entre com os Seus Dados') }}
-                                     </label>
+
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
