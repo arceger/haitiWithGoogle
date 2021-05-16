@@ -10,9 +10,9 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        <a class="btn btn-link">
-                                                {{ __('Entre com os Seus Dados') }}
-                                            </a>
+                                   <label class="form-check-label" for="remember">
+                                        {{ __('Entre com os Seus Dados') }}
+                                    </label>
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
@@ -66,9 +66,9 @@
                                 @endif
                                 <div class="form-group row">
                                    <div class="col-md-6 offset-md-4">
-                                           <a class="btn btn-link">
-                                                {{ __('Ou Use Sua Conta do Google') }}
-                                            </a>
+                                   <label class="form-check-label" for="remember">
+                                        {{ __('Ou Use Sua Conta do Google') }}
+                                    </label>
                                        <div class="form-check">
                                        <a href="{{ url('auth/google') }}" style="margin-top: 20px;" class="btn btn-sm btn-block">
                                        <img src="btn_google_signin_dark_focus_web@2x.png" style="width: 189%;text-align: center;padding-right: 40px;">
