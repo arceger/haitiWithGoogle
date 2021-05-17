@@ -14,7 +14,13 @@ class CreateDependentesTable extends Migration
     public function up()
     {
         Schema::create('dependentes', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('nome');
+            $table->string('email');
+            $table->string('genero');
+            $table->string('idade');
+            $table->string('tipo_dep'); //filho esposa idoso
+            $table->foreign('email')->references('email')->on('associados')->onDelete('cascade');
             $table->timestamps();
         });
     }

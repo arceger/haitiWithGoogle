@@ -15,6 +15,13 @@ class CreateEmpresasTable extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
+            $table->string('cnpj')->unique();
+            $table->string('nome_fant');
+            $table->string('endereco');
+            $table->string('cidade');
+            $table->string('estado');
+            $table->string('email');
+            $table->foreign('email')->references('email')->on('associados')->onDelete('cascade');
             $table->timestamps();
         });
     }

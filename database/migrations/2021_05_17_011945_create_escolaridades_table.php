@@ -14,7 +14,11 @@ class CreateEscolaridadesTable extends Migration
     public function up()
     {
         Schema::create('escolaridades', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('comments');
+            $table->string('escola_atual');
+            $table->string('grau_inst');//medio basico superior
+            $table->foreign('id')->references('id')->on('dependentes','associados')->onDelete('cascade');
             $table->timestamps();
         });
     }

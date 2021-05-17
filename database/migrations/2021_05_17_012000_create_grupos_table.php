@@ -18,7 +18,7 @@ class CreateGruposTable extends Migration
             $table->string('categoria'); //usuario ou administrador
             $table->string('email')->unique();
             $table->string('nome');
-            $table->foreign('email')->references('email')->on('associado')->onDelete('cascade');
+            $table->foreign('email')->references('email')->on('associados')->onDelete('cascade');
             $table->timestamps();
         });
     }

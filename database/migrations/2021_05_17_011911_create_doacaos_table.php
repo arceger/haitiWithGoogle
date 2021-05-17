@@ -13,8 +13,13 @@ class CreateDoacaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('doacaos', function (Blueprint $table) {
+        Schema::create('doacoes', function (Blueprint $table) {
             $table->id();
+            $table->string('tipo');
+            $table->string('quantidade');
+            $table->string('cor');
+            $table->string('cnpj');
+            $table->foreign('cnpj')->references('cnpj')->on('empresas')->onDelete('cascade');
             $table->timestamps();
         });
     }

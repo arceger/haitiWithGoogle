@@ -14,7 +14,13 @@ class CreateMedicalsTable extends Migration
     public function up()
     {
         Schema::create('medicals', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('vacinas_st');
+            $table->string('vacinas_brief');
+            $table->string('tipo_sang');
+            $table->string('alergias');
+            $table->string('email');
+            $table->foreign('id')->references('id')->on('dependentes','associados')->onDelete('cascade');
             $table->timestamps();
         });
     }
