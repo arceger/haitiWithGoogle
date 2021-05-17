@@ -72,7 +72,7 @@
                     </form>
                 </div>
 
-                <div class="card-header">Ou Entre com sua Conta do Google</div>
+                <div class="card-header">Ou Use sua Conta do Google</div>
                 <div class="card-body">
                 <div class="form-group row">
                                    <div class="col-md-6 offset-md-4">
