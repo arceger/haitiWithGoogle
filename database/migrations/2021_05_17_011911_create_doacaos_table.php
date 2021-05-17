@@ -13,7 +13,7 @@ class CreateDoacaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('doacoes', function (Blueprint $table) {
+        Schema::create('doacaos', function (Blueprint $table) {
             $table->id();
             $table->string('tipo');
             $table->string('quantidade');
