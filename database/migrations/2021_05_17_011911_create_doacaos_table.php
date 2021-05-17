@@ -19,7 +19,6 @@ class CreateDoacaosTable extends Migration
             $table->string('quantidade');
             $table->string('cor');
             $table->string('cnpj');
-            $table->foreign('cnpj')->references('cnpj')->on('empresas')->onDelete('cascade');
             $table->timestamps();
         });
     }
