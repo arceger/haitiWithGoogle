@@ -23,7 +23,7 @@ class AssociadoController extends Controller
      */
     public function create()
     {
-        //
+        return view ('cadastrar');
     }
 
     /**
@@ -34,7 +34,25 @@ class AssociadoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Associado::create([
+            'nome' => $request->nome,
+            'est_civel' => $request->est_civel,
+            'endereco' => $request->endereco,
+            'telefone' => $request->telefone,
+            'email' => $request->email,
+            'telefone_rec' => $request ->telefone_rec,
+            'cidade' => $request ->cidade,
+            'estado' => $request -> estado,
+            'description' => $request -> description,
+            ]);
+
+            Grupo::create([
+                'categoria' => $request -> categoria,
+                'email' => $request -> email,
+                'nome' => $request -> nome,
+               ]);
+
+            return view ('caddep',$request);
     }
 
     /**
@@ -43,9 +61,10 @@ class AssociadoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $data = Associado::all();
+        return view('show',['associados'=>$data]) ;
     }
 
     /**

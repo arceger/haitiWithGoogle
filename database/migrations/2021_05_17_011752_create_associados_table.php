@@ -14,7 +14,16 @@ class CreateAssociadosTable extends Migration
     public function up()
     {
         Schema::create('associados', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('nome');
+            $table->string('est_civel');
+            $table->string('endereco');
+            $table->string('telefone');
+            $table->string('email')->unique();
+            $table->string('telefone_rec');
+            $table->string('cidade');
+            $table->string('estado');
+            $table->string('description');
             $table->timestamps();
         });
     }
