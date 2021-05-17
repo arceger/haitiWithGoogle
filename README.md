@@ -9,6 +9,6 @@ git push -u origin main
 
 ## gitlab heroku
 
-git push heroku master  
+git push heroku main 
 
 +
